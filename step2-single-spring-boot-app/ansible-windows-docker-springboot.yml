@@ -4,7 +4,10 @@
     base_path: "C:\\springboot\\simpleapp"
     app_port: 8088
     target_path: "{{base_path}}\\{{app_name}}"
-
+    #host=ansible-windows-docker-springboot-dev 
+    app_name=restexamples
+    jar_input_path=../dockercontent/restexamples-0.0.1-SNAPSHOT.jar
+    
   tasks:
   # Prepare for the Docker build...
   - name: Create directory C:\springboot\simpleapp\app_name, if not there
